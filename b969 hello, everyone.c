@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 int main(){
     char list[99][99];
@@ -6,7 +7,7 @@ int main(){
         if(getchar()=='\n') break;
         count++;
     }
-    int say[99];
+    char say[99];
     scanf("%[^\n]%*c",say);
     for(int x=0;x<=count;x++){
         printf("%s, %s\n",say,list[x]);
