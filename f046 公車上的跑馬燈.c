@@ -6,7 +6,6 @@ int main(){
     scanf("%d%*c",&width);
     scanf("%[^\n]%*c",main);
     scanf("%d",&time);
-    char set[99]={'\0'};
     char reverse[99]={'\0'};
     for(int x=time-width,count=0;x<=time;x++,count++){
         if(x<0){
