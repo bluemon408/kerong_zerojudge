@@ -23,25 +23,20 @@ void permutation(int *list,int cnt,int sum,int run){
             printf("%d ",ans[x]);
         }
         printf("\n");
-        have =true;
+        have = true;
         return;
     }
     else{
         for(int x=0;x<n;x++){
-            if(appear[x]==false && sum+list[x]<=m && list[x]>ans[cnt-1]){
+            if(appear[x]==false && sum+list[x]<=m && list[x]>=ans[cnt-1]){
                 ans[cnt]=list[x];
                 sum+=ans[cnt];
                 appear[x]=true;
                 permutation(list,cnt+1,sum,run+1);
                 sum-=ans[cnt];
-                appear[x]=false;
-            }
-            if(appear[x]==false && sum+list[x]<=m && list[x]==ans[cnt-1]){
-                ans[cnt]=list[x];
-                sum+=ans[cnt];
-                appear[x]=true;
-                permutation(list,cnt+1,sum,run+1);
-                sum-=ans[cnt];
+                if(list[x]!=ans[cnt-1]){
+                    appear[x]=false;
+                }
             }
         }
     }
