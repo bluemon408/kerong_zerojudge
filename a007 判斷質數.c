@@ -47,7 +47,7 @@ int main()
                 }
             }
         }
-        puts(isPrime ? "½è¼Æ" : "«D½è¼Æ");
+        printf("%s\n",(isPrime)?"è³ªæ•¸":"éè³ªæ•¸");
     }
     return 0;
 }
