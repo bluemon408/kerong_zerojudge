@@ -257,6 +257,7 @@ int main(){
             int run=0;
             char change_second[999]={'\0'};
             char save_change[999]={'\0'};
+//            div_run=0;
             if(first[0]=='0') change_int(first);
             if(second[0]=='0') change_int(second);
             if(strlen(first)<strlen(second)){
