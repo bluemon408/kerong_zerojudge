@@ -26,7 +26,12 @@ int main(){
     else if(change=='E'){
         money-=cost*34.5;
         money/=34.5;
-        printf(money<0?"No Money":"E %.2f",money);
+        if(money<0.05 && money>0){
+            printf("E 0.00");
+        }
+        else{
+            printf(money<0?"No Money":"E %.2f",money);
+        }
     }
     
     return 0;
