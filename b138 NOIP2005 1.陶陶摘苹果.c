@@ -4,7 +4,8 @@
  *  Created on: 2022年7月4日
  *      Author: KeRong
  *  Spend time: 3m40s
- *  ZERO JUDGE:2022-07-04 21:20 <pass>
+ *      Result: AC (12ms, 84KB)
+ *  ZERO JUDGE: 2022-07-04 21:20
  */
 
 #include<stdio.h>
