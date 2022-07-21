@@ -13,8 +13,8 @@ int main(){
 	setbuf(stdout,NULL);
 	int n,m;
 	while(scanf("%d %d",&n,&m)!=EOF){
-		char n_list[99999]={'\0'};
-		char *m_list[10001]={'\0'};
+		char *n_list=(char *)malloc((n+1)*sizeof(char));
+		char *m_list=(char *)malloc((m+1)*sizeof(char));
 		scanf("%s %s",n_list,m_list);
 		char *position=strstr(n_list,m_list);
 		if(position==NULL){
@@ -23,6 +23,8 @@ int main(){
 		else{
 			printf("Yes\npos: %d\n",position-n_list);
 		}
+		free(n_list);
+		free(m_list);
 	}
 	return 0;
 }
