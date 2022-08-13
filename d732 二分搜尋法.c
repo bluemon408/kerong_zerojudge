@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int binary_search(int list[],int low,int high,int target){
     while(low<=high){
-        int mid=(low+high)/2;
+        int mid=(low+high+1)/2;
         if(list[mid]==target){
             return mid+1;
         }
